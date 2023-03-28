@@ -6,6 +6,7 @@ import About from '../../pages/About/About';
 import Apartment from '../../pages/Apartment/Apartment';
 import PageNotFound from '../../pages/404/404';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function AppRouter() {
   return (
@@ -17,6 +18,7 @@ function AppRouter() {
         <Route path="/apartment:id" element={<Apartment />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

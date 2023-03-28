@@ -1,7 +1,9 @@
+import './404.css';
+
 export default function PageNotFound() {
     return (
-        <div>
-            <h1>404 - page not found</h1>
+        <div className='error-title'>
+            <h1>404</h1>
         </div>
     )
 }

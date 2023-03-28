@@ -1,0 +1,14 @@
+.error-title {
+    margin: 0 auto;
+    margin-top: 169px;
+    width: 597px;
+    height: 263px;
+}
+
+.error-title h1 {
+    color: #FF6060;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}

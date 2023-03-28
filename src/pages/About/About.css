@@ -1,3 +1,11 @@
 .About {
   color: black;
 }
+
+.headerImg {
+    width: 1240px;
+    height: 223px;
+    margin: 30px 100px 20px 100px;
+    object-fit: cover;
+    border-radius: 25px;
+}
