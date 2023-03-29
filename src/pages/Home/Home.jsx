@@ -1,8 +1,7 @@
 import homeImg from '../../assets/home.jpg';
-import '../../../src/index.css';
 import './Home.css';
 
-function Home() {
+const Home = () => {
   return (
     <div className="home-content">
       <div className='container-headerImg'>

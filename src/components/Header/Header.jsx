@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo'
-import '../../../src/index.css'
 import './Header.css';
 
-export default function Header() {
+const Header = () => {
   return (
     <header>
-      <Logo color="#FF6060" /> 
+      <Logo color="#FF6060" width={211} height={68} /> 
       <nav>
         <Link className="nav" to="/">
           Accueil
@@ -18,3 +17,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header

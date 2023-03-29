@@ -1,5 +1,7 @@
 .container-headerImg {
   position: relative;
+  background-color: black;
+  border-radius: 25px;
 }
 
 .container-headerImg h1 {
@@ -10,4 +12,8 @@
   color: #FFFFFF;
   font-size: 3em;
   font-weight: 500;
+}
+
+.home-content {
+  padding: 60px 40px;
 }

@@ -8,7 +8,7 @@ import PageNotFound from '../../pages/404/404';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-function AppRouter() {
+const AppRouter = () => {
   return (
     <Router>
       <Header />

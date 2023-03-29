@@ -9,21 +9,15 @@ footer {
     justify-content: center;
     height: 209px;
 }
-/*
-.footerContainer {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-*/
 
 .footer-logo {
     max-width: 100%;
     height: auto;
-    /*
-    width: 122px;
-    height: 39.44px;
-    */
-    padding-top: 66px;
-    padding-bottom: 28.56px;
+    padding-top: 4.125rem;
+}
+
+footer p {
+    padding-bottom: 1.813rem;
+    padding-top: 1.785rem;
+    font-size: 1.5rem;
 }

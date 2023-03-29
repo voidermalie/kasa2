@@ -20,8 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 1240px; */
     width: 100vw;
     height: 68px;
-    padding: 40px 100px 0 100px;
+    padding: 40px 100px 0 100px
 }

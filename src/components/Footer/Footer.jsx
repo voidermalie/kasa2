@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
 
-            <Logo color='#FFFFFF' className='footer-logo' />
+            <Logo color='#FFFFFF' width={122} height={39.44} className='footer-logo' />
             <p>© 2020 Kasa. All rights reserved</p>    
 
         </footer>
