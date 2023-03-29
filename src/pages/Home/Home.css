@@ -1,19 +1,21 @@
-.container-headerImg {
+.wrapper-header-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  background-color: black;
-  border-radius: 25px;
 }
 
-.container-headerImg h1 {
+.wrapper-header-image h1 {
   position:absolute;
-  z-index: 1;
-  top: 30%;
-  left: 30%;
+  z-index: 2;
   color: #FFFFFF;
   font-size: 3em;
   font-weight: 500;
+  margin: 0;
+  text-align: center;
 }
 
 .home-content {
-  padding: 60px 40px;
+  padding: 40px 100px;
 }

@@ -1,12 +1,13 @@
 import './About.css';
-import aboutImg from '../../assets/about.jpg'
+import HeaderImage from '../../components/HeaderImage/HeaderImage';
 
 const About = () => {
-    return (
-        <div className="About">
-            <img className='headerImg' src={aboutImg} alt='' />
-        </div>
-    )
-}
+  const page = 'about';
+  return (
+    <div className='about-content'>
+      <HeaderImage page={page} />
+    </div>
+  );
+};
 
-export default About
+export default About;
