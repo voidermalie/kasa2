@@ -1,37 +1,38 @@
 import { useState } from 'react';
-import './DropDown.css';
+import './Dropdown.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const DropDown = () => {
+const Dropdown = ({dropdownTitles, dropdownDescriptions}) => {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(Array(dropdownTitles.length).fill(false));
 
-  const aboutTitles = ['Fiabilité', 'Respect', 'Service', 'Sécurité'];
-  const aboutDescriptions = [
-    'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.',
-    'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
-    "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
-    "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-  ];
+  const toggleDropdown = (index) => {
+    const newIsOpen = [...isOpen];
+    newIsOpen[index] = !newIsOpen[index]; //toggle = inverser le booléen
+    setIsOpen(newIsOpen); // mettre à jour le state
+  };
 
   const closeButton = <FontAwesomeIcon icon={faChevronUp} />;
   const openButton = <FontAwesomeIcon icon={faChevronDown} />;
 
   return (
     <div className="dropdown-wrapper">
-      {aboutTitles.map((aboutTitle, index) => (
+      {dropdownTitles.map((dropdownTitle, index) => (
         <div key={index} className="dropdown-item">
-          <div className={`dropdown-title ${isOpen ? 'closed' : ''}`}>
-            <h1>{aboutTitle}</h1>
-            <button onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? closeButton : openButton}
+          <div className={`dropdown-title ${isOpen[index] ? 'closed' : ''}`}>
+            <h1>{dropdownTitle}</h1>
+            <button
+            data-id={index}
+            onClick={(e) => toggleDropdown(e.currentTarget.dataset.id)}
+            >
+              {isOpen[index] ? closeButton : openButton}
             </button>
           </div>
-          {isOpen && (
+          {isOpen[index] && (
             <div className="dropdown-description">
-              <p>{aboutDescriptions[index]}</p>
+              <p>{dropdownDescriptions[index]}</p>
             </div>
           )}
         </div>
@@ -40,4 +41,4 @@ const DropDown = () => {
   );
 };
 
-export default DropDown;
+export default Dropdown;
