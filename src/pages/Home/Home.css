@@ -1,4 +1,4 @@
-.wrapper-header-image {
+.banner-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.wrapper-header-image h1 {
+.banner-wrapper h1 {
   position:absolute;
   z-index: 2;
   color: #FFFFFF;

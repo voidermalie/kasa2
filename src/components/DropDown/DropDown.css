@@ -1,53 +1,52 @@
 .dropdrown-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-item {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .dropdown-title {
-    display: flex;
-    background-color: #FF6060;
-    justify-content: space-between;
-    padding: 5px 15px;
-    border-radius: 5px;
+  display: flex;
+  background-color: #ff6060;
+  justify-content: space-between;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
 .dropdown-title.closed {
-    border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .dropdown-item h1 {
-    font-size: 1.5em;
-    color: #FFFFFF;
-    font-weight: 400;
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: white;
-    background-color: transparent;
-    /*
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: white;
+  background-color: transparent;
+  /*
       Show a hand cursor on mouse-over instead of the default arrow cursor.
       (Some argue that we should keep the default arrow cursor for buttons, to be consistent with how desktop operating systems treat buttons.)
     */
-    cursor: pointer;
-  }
-
+  cursor: pointer;
+}
 
 .dropdown-item p {
-    font-size: 1.5rem;
-    color: #FF6060;
+  font-size: 1.5rem;
+  color: #ff6060;
 }
 
 .dropdown-description {
-    background-color: #F6F6F6;
-    padding: 15px 10px 5px 10px;
-    border-radius: 0 0 5px 5px;
+  background-color: #f6f6f6;
+  padding: 15px 10px 5px 10px;
+  border-radius: 0 0 5px 5px;
 }

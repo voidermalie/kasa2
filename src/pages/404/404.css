@@ -1,14 +1,20 @@
-.error-title {
-    margin: 0 auto;
-    margin-top: 169px;
-    width: 597px;
-    height: 263px;
+.error-title h1 {
+    font-size: 16em;
 }
 
-.error-title h1 {
+.error-title h2 {
+    font-weight: 500;
+}
+
+.back-button {
     color: #FF6060;
-    width: 300px;
-    height: 100px;
-    display: inline-block;
-    text-align: center;
+    text-decoration: underline;
+}
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
 }
