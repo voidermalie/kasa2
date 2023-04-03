@@ -1,13 +1,13 @@
 import './Home.css';
-import HeaderImage from '../../components/HeaderImage/HeaderImage';
+import Banner from '../../components/Banner/Banner';
 
 const Home = () => {
   const page = 'home';
   return (
-    <div className='home-content'>
-      <div className='wrapper-header-image'>
+    <div className="home-content">
+      <div className="wrapper-header-image">
         <h1>Chez vous, partout et ailleurs</h1>
-        <HeaderImage page={page} />
+        <Banner page={page} />
       </div>
       <div className="card-container">
         <article></article>

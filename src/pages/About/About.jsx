@@ -1,5 +1,5 @@
 import './About.css';
-import HeaderImage from '../../components/HeaderImage/HeaderImage';
+import Banner from '../../components/Banner/Banner';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 const About = () => {
@@ -14,9 +14,12 @@ const About = () => {
   ];
 
   return (
-    <div className='about-content'>
-      <HeaderImage page={page} />
-      <Dropdown dropdownTitles={aboutTitles} dropdownDescriptions={aboutDescriptions}/>
+    <div className="about-content">
+      <Banner page={page} />
+      <Dropdown
+        dropdownTitles={aboutTitles}
+        dropdownDescriptions={aboutDescriptions}
+      />
     </div>
   );
 };
