@@ -5,7 +5,10 @@ import { useParams } from 'react-router-dom';
 
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Dropdown from '../../components/Dropdown/Dropdown';
+import Rating from '../../components/Rating/Rating';
+
 import { ApartmentContext } from '../../context/ApartmentContext';
+
 
 const Apartment = () => {
 
@@ -31,7 +34,9 @@ const Apartment = () => {
                         <p>{logement.host.name}</p>
                         <img className='avatar' src={logement.host.picture} alt='avatar' />
                     </div>
-                    <div className='rating'></div>
+                    <div className='rating'>
+                        <Rating rating={logement.rating} />
+                    </div>
                 </div>
             </div>
             <div className='wrapper-description'>

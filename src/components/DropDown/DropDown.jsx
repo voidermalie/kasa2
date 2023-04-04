@@ -6,7 +6,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Dropdown = ({dropdownTitles, dropdownDescriptions}) => {
 
-  const [isOpen, setIsOpen] = useState(Array(dropdownTitles.length).fill(false));
+  const [isOpen, setIsOpen] = useState(Array(dropdownTitles.length).fill(false)); //for multiple e
 
   const toggleDropdown = (index) => {
     const newIsOpen = [...isOpen];
