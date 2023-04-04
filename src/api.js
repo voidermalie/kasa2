@@ -11,3 +11,14 @@ export const fetchLogements = () => {
         }
     });
 };
+
+/* real API:
+export const fetchLogements = () => {
+  return new Promise((resolve, reject) => {
+    fetch('https://example.com/api/logements')
+      .then(response => response.json())
+      .then(data => resolve(data))
+      .catch(error => reject(error));
+  });
+};
+*/
