@@ -12,7 +12,11 @@ const Apartment = () => {
     const { id } = useParams();
     const logements = useContext(ApartmentContext);
     const logement = logements.find((logement) => logement.id === id);
-console.log(logement)
+
+    const apartmentDropdownTitle1 = ['Description'];
+    const apartmentDropdownTitle2 = ['Équipements'];
+
+
     return (
         <div className='content-apartment'>
             <Slideshow />
@@ -31,8 +35,8 @@ console.log(logement)
                 </div>
             </div>
             <div className='wrapper-description'>
-                <Dropdown dropdownTitles='Description' dropdownDescriptions={logement.description}/>
-                <Dropdown dropdownTitles='Équipements' dropdownDescriptions={logement.equipments}/>
+                <Dropdown dropdownTitles={apartmentDropdownTitle1} dropdownDescriptions={logement.description}/>
+                <Dropdown dropdownTitles={apartmentDropdownTitle2} dropdownDescriptions={logement.equipments}/>
             </div>
         </div>
     )
