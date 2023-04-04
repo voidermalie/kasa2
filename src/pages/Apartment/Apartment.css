@@ -1,0 +1,31 @@
+.wrapper-title {
+    display: flex;
+    color: #FF6060;
+}
+
+.container-apartment {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* host */
+
+.container-host {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos-host {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+/* description */
+
+

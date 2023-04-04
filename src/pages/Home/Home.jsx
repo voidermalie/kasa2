@@ -2,22 +2,13 @@ import './Home.css';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 
-import { useState, useEffect } from 'react';
-import { fetchLogements } from '../../api';
+import { useContext } from 'react';
+import { ApartmentContext } from '../../context/ApartmentContext';
 
 const Home = () => {
   const page = 'home';
 
-  const [logements, setLogements] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetchLogements();
-      setLogements(data);
-    };
-
-    fetchData();
-  }, []);
+  const logements = useContext(ApartmentContext);
 
   return (
     <div className="home-content">
