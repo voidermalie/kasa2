@@ -11,7 +11,7 @@ import { ApartmentContext } from '../../context/ApartmentContext';
 
 
 const Apartment = () => {
-
+    
     const { id } = useParams();
     const logements = useContext(ApartmentContext);
     const logement = logements.find((logement) => logement.id === id);
