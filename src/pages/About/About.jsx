@@ -23,6 +23,7 @@ const About = () => {
   return (
     <div className="about-content">
       <Banner page={page} />
+      <h1>À propos</h1>
       <Dropdown
         dropdowns={dropdowns}
       />

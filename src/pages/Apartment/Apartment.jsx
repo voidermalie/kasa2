@@ -14,7 +14,7 @@ const Apartment = () => {
   const logements = useContext(ApartmentContext);
   const logement = logements.find((logement) => logement.id === id);
 
-
+  //dropdowns
   const dropdowns1 = [{
     dropdownTitle: 'Description',
     dropdownDescription: logement.description,
@@ -24,10 +24,13 @@ const Apartment = () => {
     dropdownTitle: 'Équipements',
     dropdownDescription: logement.equipments,
   }];
+  
+   //slides
+  const slides = logement.pictures;
 
   return (
     <div className="content-apartment">
-      <Slideshow />
+      <Slideshow slides={slides}/>
       <div className="wrapper-title">
         <div className="container-apartment" key={logement.id}>
           <h1>{logement.title}</h1>

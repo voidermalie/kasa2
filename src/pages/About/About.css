@@ -1,3 +1,7 @@
 .about-content {
   padding: 40px 100px;
 }
+
+.about-content h1 {
+  display: hidden;
+}

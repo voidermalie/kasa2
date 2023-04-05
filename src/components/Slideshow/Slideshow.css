@@ -1,0 +1,34 @@
+.slide-container {
+    height: 415px;
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    height: 415px;
+    border-radius: 25px;
+}
+
+
+.slide-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide-infos {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-buttons {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-numbers {
+    color: white;
+}

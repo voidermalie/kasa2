@@ -21,7 +21,7 @@ const Dropdown = ({ dropdowns }) => {
       {dropdowns.map(({ dropdownTitle, dropdownDescription }, index) => (
         <div key={index} className="dropdown-item">
           <div className={`dropdown-title ${isOpen[index] ? 'closed' : ''}`}>
-            <h1>{dropdownTitle}</h1>
+            <h2>{dropdownTitle}</h2>
             <button
               data-id={index}
               onClick={(e) => toggleDropdown(e.currentTarget.dataset.id)}
