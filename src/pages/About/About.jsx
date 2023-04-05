@@ -13,12 +13,18 @@ const About = () => {
     "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   ];
 
+  const dropdowns = aboutTitles.map((title, index) => {
+    return {
+      dropdownTitle: title,
+      dropdownDescription: aboutDescriptions[index],
+    };
+  });
+
   return (
     <div className="about-content">
       <Banner page={page} />
       <Dropdown
-        dropdownTitles={aboutTitles}
-        dropdownDescriptions={aboutDescriptions}
+        dropdowns={dropdowns}
       />
     </div>
   );

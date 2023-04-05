@@ -4,9 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Dropdown = ({dropdownTitles, dropdownDescriptions}) => {
-
-  const [isOpen, setIsOpen] = useState(Array(dropdownTitles.length).fill(false)); //for multiple e
+const Dropdown = ({ dropdowns }) => {
+  const [isOpen, setIsOpen] = useState(new Array(dropdowns.length).fill(false));
 
   const toggleDropdown = (index) => {
     const newIsOpen = [...isOpen];
@@ -19,20 +18,20 @@ const Dropdown = ({dropdownTitles, dropdownDescriptions}) => {
 
   return (
     <div className="dropdown-wrapper">
-      {dropdownTitles.map((dropdownTitle, index) => (
+      {dropdowns.map(({ dropdownTitle, dropdownDescription }, index) => (
         <div key={index} className="dropdown-item">
           <div className={`dropdown-title ${isOpen[index] ? 'closed' : ''}`}>
             <h1>{dropdownTitle}</h1>
             <button
-            data-id={index}
-            onClick={(e) => toggleDropdown(e.currentTarget.dataset.id)}
+              data-id={index}
+              onClick={(e) => toggleDropdown(e.currentTarget.dataset.id)}
             >
               {isOpen[index] ? closeButton : openButton}
             </button>
           </div>
           {isOpen[index] && (
             <div className="dropdown-description">
-              <p>{dropdownDescriptions[index]}</p>
+              <p>{dropdownDescription}</p>
             </div>
           )}
         </div>
