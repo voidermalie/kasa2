@@ -1,6 +1,7 @@
 .slide-container {
     height: 415px;
     display: flex;
+    position: relative;
 }
 
 .image-container {
@@ -13,22 +14,44 @@
 .slide-container img {
     width: 100%;
     object-fit: cover;
+    border-radius: 25px;
 }
 
 .slide-infos {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
 .slide-buttons {
     color: white;
-    font-size: 3em;
-    position: absolute;
+    font-size: 3.5em;
     display: flex;
     justify-content: space-between;
 }
 
+.container-slide-numbers {
+    position: relative;
+}
+
 .slide-numbers {
     color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
+
+.prev-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.next-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }

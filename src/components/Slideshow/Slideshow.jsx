@@ -17,11 +17,11 @@ const Slideshow = ({ slides }) => {
   const nextButton = <FontAwesomeIcon icon={faChevronRight} />;
 
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % totalSlides)
+    setCurrentIndex((currentIndex + 1) % totalSlides);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((currentIndex - 1 + totalSlides) % totalSlides)
+    setCurrentIndex((currentIndex - 1 + totalSlides) % totalSlides);
   };
 
   useEffect(() => {
@@ -31,15 +31,21 @@ const Slideshow = ({ slides }) => {
   return (
     <article className="slide-container">
       <div className="image-container">
-          <img src={`${slides[currentIndex]}`} alt="" key={currentIndex} />
+        <img src={`${slides[currentIndex]}`} alt="" key={currentIndex} />
       </div>
-      {totalSlides > 1 && (
+      {totalSlides > 1 && ( //boutons s'affichent uniquement si + d'une images
         <div className="slide-infos">
           <div className="slide-buttons">
-            <button className="slide-button" onClick={handlePrev}>{prevButton}</button>
-            <button className="slide-button" onClick={handleNext}>{nextButton}</button>
+            <button className="prev-button" onClick={handlePrev}>
+              {prevButton}
+            </button>
+            <button className="next-button" onClick={handleNext}>
+              {nextButton}
+            </button>
           </div>
-          <p className='slide-numbers'>{`${currentSlide}/${totalSlides}`}</p>
+          <div className="container-slide-numbers">
+            <p className="slide-numbers">{`${currentSlide}/${totalSlides}`}</p>
+          </div>
         </div>
       )}
     </article>
@@ -47,6 +53,3 @@ const Slideshow = ({ slides }) => {
 };
 
 export default Slideshow;
-
-//dernière image clic sur next => première image
-//1re image clic sur prev => dernière image
