@@ -1,10 +1,11 @@
 .content-apartment {
-    padding: 60px 100px;
+    padding: 20px 100px;
 }
 
 .wrapper-title {
     display: flex;
     color: #FF6060;
+    margin-top: 20px;
 }
 
 .container-apartment {

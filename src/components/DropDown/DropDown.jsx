@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Dropdown = ({ dropdowns }) => {
+const Dropdown = ({ dropdowns, wrapperClass }) => {
   const [isOpen, setIsOpen] = useState(new Array(dropdowns.length).fill(false));
 
   const toggleDropdown = (index) => {
@@ -30,7 +30,7 @@ const Dropdown = ({ dropdowns }) => {
             </button>
           </div>
           {isOpen[index] && (
-            <div className="dropdown-description">
+            <div className={`dropdown-description ${wrapperClass}`}>
               <p>{dropdownDescription}</p>
             </div>
           )}
