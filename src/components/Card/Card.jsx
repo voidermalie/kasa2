@@ -2,7 +2,8 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 
 
-/* // logement en tant qu'objet
+//logement en tant qu'objet
+
 const Card = ({ logement, to }) => { // logement en tant qu'objet
     return (
       <Link to={to} className='card-link' key={logement.id}>
@@ -12,10 +13,11 @@ const Card = ({ logement, to }) => { // logement en tant qu'objet
         </article>
       </Link>
     );
-  };
+};
   
-  export default Card;
-*/
+export default Card;
+
+/*avant:
 
 const Card = ({ cardSrc, cardAlt, cardTitle, to }) => { 
   return (
@@ -29,3 +31,4 @@ const Card = ({ cardSrc, cardAlt, cardTitle, to }) => {
 };
 
 export default Card;
+*/

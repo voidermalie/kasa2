@@ -20,11 +20,7 @@ const Home = () => {
       <div className="card-wrapper">
         {logements.map((logement) => (
             <Card
-              key={logement.id}
-              cardTitle={logement.title}
-              cardSrc={logement.cover}
-              cardAlt={logement.title}
-              //logement={logement}
+              logement={logement}
               to={`apartment/${logement.id}`}
             />
         ))}
