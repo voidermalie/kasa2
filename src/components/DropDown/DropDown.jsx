@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Dropdown = ({ dropdowns, wrapperClass }) => {
-  const [isOpen, setIsOpen] = useState(new Array(dropdowns.length).fill(false));
+const Dropdown = ({ dropdowns }) => {
+  //const [isOpen, setIsOpen] = useState(new Array(dropdowns.length).fill(false));
+  const [isOpen, setIsOpen] = useState(dropdowns.map(() => false));
 
   const toggleDropdown = (index) => {
     const newIsOpen = [...isOpen];
@@ -13,8 +14,16 @@ const Dropdown = ({ dropdowns, wrapperClass }) => {
     setIsOpen(newIsOpen); // mettre à jour le state
   };
 
+  /* toggle all at once:
+    const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+  */
+
   const closeButton = <FontAwesomeIcon icon={faChevronUp} />;
   const openButton = <FontAwesomeIcon icon={faChevronDown} />;
+
+  //const hasMultipleItems = dropdowns.length > 1; (doesn't work)
 
   return (
     <div className="dropdown-wrapper">
@@ -30,8 +39,16 @@ const Dropdown = ({ dropdowns, wrapperClass }) => {
             </button>
           </div>
           {isOpen[index] && (
-            <div className={`dropdown-description ${wrapperClass}`}>
-              <p>{dropdownDescription}</p>
+            <div className="dropdown-description">
+              {dropdownTitle === 'Équipements' ? (
+                <ul>
+                  {dropdownDescription.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{dropdownDescription}</p>
+              )}
             </div>
           )}
         </div>
