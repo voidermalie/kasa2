@@ -16,6 +16,7 @@ const Slideshow = ({ slides }) => {
   const prevButton = <FontAwesomeIcon icon={faChevronLeft} />;
   const nextButton = <FontAwesomeIcon icon={faChevronRight} />;
 
+  
   const handleNext = () => {
     setCurrentIndex((currentIndex + 1) % totalSlides);
   };
@@ -24,6 +25,9 @@ const Slideshow = ({ slides }) => {
     setCurrentIndex((currentIndex - 1 + totalSlides) % totalSlides);
   };
 
+  /*counter slide =>
+  change si l'index change =>
+  prend la valeur de currentIndex (+1 = pour pas être basé à 0)*/
   useEffect(() => {
     setCurrentSlide(currentIndex + 1);
   }, [currentIndex]);
