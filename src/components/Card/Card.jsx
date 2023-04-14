@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 //logement en tant qu'objet
 
-const Card = ({ logement, to }) => { // logement en tant qu'objet
+const Card = ({ logement, to }) => {
     return (
       <Link to={to} className='card-link' key={logement.id}>
         <article className="card-container">
