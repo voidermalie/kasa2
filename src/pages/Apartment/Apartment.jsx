@@ -65,7 +65,7 @@ const Apartment = () => {
       </div>
       <div className="wrapper-description">
         <Dropdown dropdowns={dropdowns1} />
-        <Dropdown dropdowns={dropdowns2} />
+        <Dropdown dropdowns={dropdowns2} isList={true} />
       </div>
     </div>
   );

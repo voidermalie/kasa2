@@ -1,8 +1,8 @@
 import './Tag.css';
 
 const Tag = ({ tags }) => {
-  const tag = tags.map((tag) => {
-    return <h3 className='tag-item'>{tag}</h3>;
+  const tag = tags.map((tag, index) => {
+    return <h3 key={index} className='tag-item'>{tag}</h3>;
   });
   return <div className='tag'>{tag}</div>;
 };

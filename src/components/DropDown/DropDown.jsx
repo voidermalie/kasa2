@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Dropdown = ({ dropdowns }) => {
+const Dropdown = ({ dropdowns, isList }) => {
   //const [isOpen, setIsOpen] = useState(new Array(dropdowns.length).fill(false));
   const [isOpen, setIsOpen] = useState(dropdowns.map(() => false));
 
@@ -40,7 +40,7 @@ const Dropdown = ({ dropdowns }) => {
           </div>
           {isOpen[index] && (
             <div className="dropdown-description">
-              {dropdownTitle === 'Équipements' ? (
+              {isList ? (
                 <ul>
                   {dropdownDescription.map((item, index) => (
                     <li key={index}>{item}</li>
