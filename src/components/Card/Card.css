@@ -3,10 +3,10 @@
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 40px;
-  gap: 30px;
+  gap: 45px;
   margin-top: 40px;
 }
 
@@ -44,7 +44,7 @@
 
 .card-title {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 20px;
   position: absolute;

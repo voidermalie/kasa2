@@ -23,12 +23,10 @@ const Dropdown = ({ dropdowns, isList }) => {
   const closeButton = <FontAwesomeIcon icon={faChevronUp} />;
   const openButton = <FontAwesomeIcon icon={faChevronDown} />;
 
-  //const hasMultipleItems = dropdowns.length > 1; (doesn't work)
-
   return (
     <div className="dropdown-wrapper">
       {dropdowns.map(({ dropdownTitle, dropdownDescription }, index) => (
-        <div key={index} className="dropdown-item">
+        <div key={index} className='dropdown-item'>
           <div className={`dropdown-title ${isOpen[index] ? 'closed' : ''}`}>
             <h2>{dropdownTitle}</h2>
             <button

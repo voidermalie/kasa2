@@ -25,7 +25,6 @@ const Apartment = () => {
     setLogement(apartment);
   }, [ id, logements, navigate ]);
 
-
   if (!logement) {
     return <div>Loading...</div>;
   }
