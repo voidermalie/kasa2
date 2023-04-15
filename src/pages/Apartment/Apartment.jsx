@@ -1,7 +1,7 @@
 import './Apartment.css';
 
 import { useContext, useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Dropdown from '../../components/Dropdown/Dropdown';
@@ -14,11 +14,17 @@ const Apartment = () => {
   const { id } = useParams();
   const logements = useContext(ApartmentContext);
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const apartment = logements.find((logement) => logement.id === id);
+    if (!apartment) {
+        navigate('/404');
+        return;
+    }
     setLogement(apartment);
-  }, [id, logements]);
+  }, [ id, logements, navigate ]);
+
 
   if (!logement) {
     return <div>Loading...</div>;
