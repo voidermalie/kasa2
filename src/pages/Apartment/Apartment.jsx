@@ -10,6 +10,9 @@ import Tag from '../../components/Tag/Tag';
 
 import { ApartmentContext } from '../../context/ApartmentContext';
 
+
+
+
 const Apartment = () => {
   const { id } = useParams();
   const logements = useContext(ApartmentContext);
@@ -19,11 +22,11 @@ const Apartment = () => {
   useEffect(() => {
     const apartment = logements.find((logement) => logement.id === id);
     if (!apartment) {
-        navigate('/404');
-        return;
+      navigate('/404');
+      return;
     }
     setLogement(apartment);
-  }, [ id, logements, navigate ]);
+  }, [id, logements, navigate]);
 
   if (!logement) {
     return <div>Loading...</div>;

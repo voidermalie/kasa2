@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  height: 100%;
 }
 
 .dropdown-title {
@@ -16,6 +17,7 @@
   justify-content: space-between;
   padding: 5px 15px;
   border-radius: 5px;
+  align-items: center;
 }
 
 .dropdown-title.closed {
@@ -32,24 +34,31 @@ button {
   padding: 0;
   border: none;
   font: inherit;
+  font-size: 1.4em;
   color: white;
   background-color: transparent;
-  /*
-      Show a hand cursor on mouse-over instead of the default arrow cursor.
-      (Some argue that we should keep the default arrow cursor for buttons, to be consistent with how desktop operating systems treat buttons.)
-    */
   cursor: pointer;
 }
 
 .dropdown-item p {
-  font-size: 1.5rem;
+  font-size: 1.125em;
   color: #ff6060;
+  padding: 10px;
 }
 
 .dropdown-description {
   background-color: #f6f6f6;
   padding: 15px 10px 5px 10px;
   border-radius: 0 0 5px 5px;
+  font-size: 1.125em;
+  color: #ff6060;
+  height: 100%;
+}
+
+.dropdown-description ul {
+  list-style-type: none;
+  padding: 10px;
+
 }
 
 .wrapper-description {
@@ -57,10 +66,3 @@ button {
     gap: 30px;
     justify-content: center; /* centers the dropdowns horizontally */
 }
-
-/*
-.list-dropdown {
-    display: flex;
-    flex-direction: column;
-}
-*/

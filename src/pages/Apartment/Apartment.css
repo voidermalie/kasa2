@@ -8,6 +8,18 @@
     margin-top: 20px;
 }
 
+/* custom dropdown */
+
+.wrapper-description h2 {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.wrapper-description button {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
 .container-apartment {
     flex: 1 1 60%;
     display: flex;
@@ -24,6 +36,7 @@
     font-size: 1.1em;
     font-weight: 500;
 }
+
 
 /* host */
 
@@ -52,3 +65,5 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* new flex apartment infos */
