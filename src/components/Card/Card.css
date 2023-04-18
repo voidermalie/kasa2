@@ -52,3 +52,20 @@
   z-index: 3;
   width: 75%;
 }
+
+@media (max-width: 792px) {
+
+  .card-wrapper {
+    background-color: white;
+    box-shadow: none;
+    flex-direction: column;
+    padding: 0;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  .card-link {
+    width: 100%;
+    aspect-ratio: 2/1.5;
+  }
+}

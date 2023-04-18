@@ -6,3 +6,18 @@
   z-index: 1;
   filter: brightness(70%)
 }
+
+
+@media (max-width: 792px) {
+
+  .banner-image {
+    aspect-ratio: 3;
+    border-radius: 15px;
+  }
+
+  .banner-wrapper h1 {
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+};

@@ -1,7 +1,8 @@
-const Logo = ({ width, height, color }) => {
+const Logo = ({ width, height, color, className }) => {
   return (
     <svg
       id="logo"
+      className={className}
       aria-labelledby="logoTitle"
       role="img"
       width={width}

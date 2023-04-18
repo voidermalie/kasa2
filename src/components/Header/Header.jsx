@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header>
-      <Logo color="#FF6060" width={211} height={68} /> 
+      <Logo className={'logo'} color="#FF6060" width={211} height={68} /> 
       <nav>
         <Link className="nav" to="/">
           Accueil

@@ -5,3 +5,9 @@
 .about-content h1 {
   display: none;
 }
+
+@media (max-width: 792px) {
+  .about-content {
+    padding: 30px;
+  }
+}
