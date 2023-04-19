@@ -2,12 +2,11 @@ import './Rating.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-
 const Rating = ({ rating }) => {
-
   const range = [1, 2, 3, 4, 5];
   const stars = range.map((num) => (
     <FontAwesomeIcon
+      className="star"
       icon={faStar}
       key={num}
       color={num <= rating ? '#FF6060' : '#E3E3E3'}

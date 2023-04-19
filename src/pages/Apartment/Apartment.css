@@ -29,12 +29,12 @@
 }
 
 .container-apartment h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 450;
 }
 
 .container-apartment h2 {
-  font-size: 1.1em;
+  font-size: 1.125em;
   font-weight: 500;
 }
 
@@ -43,12 +43,18 @@
 .container-host {
   display: flex;
   flex-direction: column;
+  margin-top: 7px;
 }
 
 .infos-host {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: flex-end;
+}
+
+.infos-host p {
+  font-size: 1.125em;
+  width: 50%;
 }
 
 .avatar {
@@ -66,6 +72,19 @@
   justify-content: space-between;
 }
 
+.tags {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+
 /* new flex apartment infos */
 
 @media screen and (max-width: 792px) {
@@ -79,6 +98,7 @@
 
   .container-apartment {
     order: 1;
+    gap: 10px;
   }
 
   .tags {
@@ -88,7 +108,7 @@
 
   .container-host {
     order: 3;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,6 +116,10 @@
 
   .rating {
     order: 1;
+  }
+
+  .star {
+    font-size: 0.6em;
   }
 
   .infos-host {

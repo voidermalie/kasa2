@@ -17,16 +17,16 @@
   background-color: #ff6060;
   justify-content: space-between;
   padding: 5px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   align-items: center;
 }
 
 .dropdown-title.closed {
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .dropdown-item h2 {
-  font-size: 1.5em;
+  font-size: 1.125em;
   color: #ffffff;
   font-weight: 400;
 }

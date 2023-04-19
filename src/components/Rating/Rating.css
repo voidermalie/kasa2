@@ -1,0 +1,10 @@
+.star {
+    font-size: 1.4em;
+    padding-right: 7px;
+}
+
+@media screen and (max-width: 792px) {
+    .star {
+        font-size: 1em;
+    }
+}
