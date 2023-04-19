@@ -36,6 +36,8 @@ const Logo = ({ width, height, color, className }) => {
   );
 };
 
+export default Logo;
+
 /*
 const Logo = ({color}) => {
     return (
@@ -46,5 +48,3 @@ const Logo = ({color}) => {
     );
 };
 */
-
-export default Logo;

@@ -8,16 +8,14 @@
   padding: 40px;
   gap: 45px;
   margin-top: 40px;
-  filter: drop-shadow(0 5px 3px lightgray);
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-link {
   width: 30%;
   aspect-ratio: 1;
   border-radius: 25px;
-  filter: drop-shadow(0 5px 3px lightgray);
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-container {
@@ -57,14 +55,14 @@
   width: 75%;
 }
 
-@media (max-width: 792px) {
+@media screen and (max-width: 792px) {
 
   .card-wrapper {
     background-color: white;
     box-shadow: none;
     flex-direction: column;
     padding: 0;
-    gap: 25px;
+    gap: 30px;
     margin-top: 25px;
   }
 
