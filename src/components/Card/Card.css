@@ -8,12 +8,16 @@
   padding: 40px;
   gap: 45px;
   margin-top: 40px;
+  filter: drop-shadow(0 5px 3px lightgray);
+
 }
 
 .card-link {
   width: 30%;
   aspect-ratio: 1;
   border-radius: 25px;
+  filter: drop-shadow(0 5px 3px lightgray);
+
 }
 
 .card-container {

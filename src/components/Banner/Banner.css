@@ -4,7 +4,7 @@
   object-fit: cover;
   border-radius: 25px;
   z-index: 1;
-  filter: brightness(70%)
+  filter: brightness(70%) drop-shadow(0 5px 3px lightgray);
 }
 
 

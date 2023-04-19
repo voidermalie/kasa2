@@ -2,6 +2,7 @@
     height: 415px;
     display: flex;
     position: relative;
+    filter: drop-shadow(0 5px 3px lightgray);
 }
 
 .image-container {
