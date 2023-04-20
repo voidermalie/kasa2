@@ -60,11 +60,10 @@ button {
 .dropdown-description ul {
   list-style-type: none;
   padding: 10px;
-
 }
 
 .wrapper-description {
-    display: flex;
-    gap: 30px;
-    justify-content: center; /* centers the dropdowns horizontally */
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* centers the dropdowns horizontally */
 }

@@ -1,5 +1,8 @@
 .tag {
-    display: flex;
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tag h3 {

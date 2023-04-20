@@ -1,5 +1,5 @@
 .content-apartment {
-  padding: 20px 100px;
+  padding: 30px 100px;
 }
 
 .wrapper-title {
@@ -43,7 +43,7 @@
 .container-host {
   display: flex;
   flex-direction: column;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .infos-host {
@@ -73,7 +73,6 @@
 }
 
 .tags {
-  margin-top: 20px;
   flex-wrap: wrap;
   gap: 6px;
 }
@@ -89,7 +88,7 @@
 
 @media screen and (max-width: 792px) {
   .content-apartment {
-    padding: 30px 30px 0 30px;
+    padding: 10px 30px 0 30px;
   }
 
   .wrapper-title {

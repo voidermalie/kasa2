@@ -1,23 +1,25 @@
-import { createContext, useState, useEffect } from "react";
-import { fetchLogements } from "../api";
+import { createContext, useState, useEffect } from 'react';
+import { fetchLogements } from '../api';
 
 export const ApartmentContext = createContext([]);
 
 export const ApartmentProvider = ({ children }) => {
-    const [logements, setLogements] = useState([]);
+  const [logements, setLogements] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-          const data = await fetchLogements();
-          setLogements(data);
-        };
-    
-        fetchData();
-      }, []);
-    
-    return (
-        <ApartmentContext.Provider value={logements}>
-            { children }
-        </ApartmentContext.Provider>
-    );
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchLogements();
+      setLogements(data);
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <ApartmentContext.Provider value={logements}>
+      {children}
+    </ApartmentContext.Provider>
+  );
 };
+
+// on passe la valeur de logements au provider que les enfants pourront 'consommer'
