@@ -42,14 +42,14 @@ const About = () => {
   ];
 
   return (
-    <div className="about-content">
+    <section className="about-content">
       <Banner page={page} />
       <h1>À propos</h1>
       <Dropdown dropdowns={dropdowns1} />
       <Dropdown dropdowns={dropdowns2} />
       <Dropdown dropdowns={dropdowns3} />
       <Dropdown dropdowns={dropdowns4} />
-    </div>
+    </section>
   );
 };
 

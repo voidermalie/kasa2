@@ -51,7 +51,7 @@ const Apartment = () => {
   const slides = logement.pictures;
 
   return (
-    <div className="content-apartment">
+    <section className="content-apartment">
       <Slideshow slides={slides} />
       <div className="wrapper-title">
         <div className="container-apartment" key={logement.id}>
@@ -75,7 +75,7 @@ const Apartment = () => {
         <Dropdown dropdowns={dropdowns1} />
         <Dropdown dropdowns={dropdowns2} isList={true} />
       </div>
-    </div>
+    </section>
   );
 };
 

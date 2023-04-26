@@ -8,6 +8,8 @@ import PageNotFound from '../../pages/404/404';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+//composants de page importés => affichage pour les différents url, chemins
+//l'astérisque est utilisé comme un caractère générique et représente n'importe quel url
 const AppRouter = () => {
   return (
     <Router>

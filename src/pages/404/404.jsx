@@ -9,7 +9,7 @@ const PageNotFound = () => {
     }
 
   return (
-    <div className="error-page">
+    <section className="error-page">
       <div className="error-title">
         <h1>404</h1>
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
@@ -17,7 +17,7 @@ const PageNotFound = () => {
       <button onClick={handleBackHome} className="back-button">
         Retourner sur la page d’accueil
       </button>
-    </div>
+    </section>
   );
 };
 

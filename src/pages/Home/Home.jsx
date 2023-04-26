@@ -12,7 +12,7 @@ const Home = () => {
   const logements = useContext(ApartmentContext);
 
   return (
-    <div className="home-content">
+    <section className="home-content">
       <div className="banner-wrapper">
         <h1>Chez vous, partout et ailleurs</h1>
         <Banner page={page} />
@@ -26,7 +26,7 @@ const Home = () => {
             />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
