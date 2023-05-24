@@ -1,8 +1,10 @@
 import './Banner.css';
 
+const publicUrl = process.env.PUBLIC_URL;
+
 const Banner = (props) => {
   const { page } = props;
-  const imgSrc = `/assets/${page}-header.jpg`;
+  const imgSrc = `${publicUrl}/assets/${page}-header.jpg`;
 
   return <img src={imgSrc} alt="" className="banner-image" />;
 };
