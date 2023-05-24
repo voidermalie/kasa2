@@ -1,4 +1,5 @@
 import './Home.css';
+import '../../components/Card/Card.css';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 
