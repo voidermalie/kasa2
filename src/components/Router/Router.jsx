@@ -15,7 +15,7 @@ const AppRouter = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/kasa2" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/apartment/:id" element={<Apartment />} />
         <Route path="*" element={<PageNotFound />} />
