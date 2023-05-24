@@ -9,6 +9,7 @@
   display: flex;
   height: 415px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .slide-container img {
