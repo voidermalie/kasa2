@@ -16,8 +16,8 @@ const AppRouter = () => {
       <Header />
       <Routes>
         <Route path="/kasa2" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/apartment/:id" element={<Apartment />} />
+        <Route path="/kasa2/about" element={<About />} />
+        <Route path="/kasa2/apartment/:id" element={<Apartment />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
