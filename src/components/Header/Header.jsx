@@ -7,10 +7,10 @@ const Header = () => {
     <header>
       <Logo className={'logo'} color="#FF6060" width={211} height={68} /> 
       <nav>
-        <Link className="nav" to="/">
+        <Link className="nav" to="/kasa2">
           Accueil
         </Link>
-        <Link className="nav" to="/about">
+        <Link className="nav" to="/kasa2/about">
           A propos
         </Link>
       </nav>
