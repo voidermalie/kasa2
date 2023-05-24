@@ -43,7 +43,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about-content container">
+    <section className="about-content">
       <Banner page={page} />
       <h1>À propos</h1>
       <Dropdown dropdowns={dropdowns1} />
