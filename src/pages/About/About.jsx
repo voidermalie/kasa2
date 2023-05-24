@@ -1,5 +1,6 @@
 import './About.css';
 import Banner from '../../components/Banner/Banner';
+import '../../components/Banner/Banner.css';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 const About = () => {
@@ -42,7 +43,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about-content">
+    <section className="about-content container">
       <Banner page={page} />
       <h1>À propos</h1>
       <Dropdown dropdowns={dropdowns1} />
