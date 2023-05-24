@@ -1,13 +1,13 @@
 .about-content {
-  padding: 40px 100px;
+  padding: 40px 100px !important;
 }
 
 .about-content h1 {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 792px) {
   .about-content {
-    padding: 30px;
+    padding: 30px !important;
   }
 }
