@@ -4,7 +4,7 @@ import { useContext, useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import Slideshow from '../../components/Slideshow/Slideshow';
-import Dropdown from '../../components/Dropdown/Dropdown';
+import DropDown from '../../components/DropDown/DropDown';
 import Rating from '../../components/Rating/Rating';
 import Tag from '../../components/Tag/Tag';
 
@@ -72,8 +72,8 @@ const Apartment = () => {
         </div>
       </div>
       <div className="wrapper-description">
-        <Dropdown dropdowns={dropdowns1} />
-        <Dropdown dropdowns={dropdowns2} isList={true} />
+        <DropDown dropdowns={dropdowns1} />
+        <DropDown dropdowns={dropdowns2} isList={true} />
       </div>
     </section>
   );
