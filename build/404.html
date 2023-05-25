@@ -2,9 +2,13 @@
 <html>
   <head>
     <script>
-      // Redirect all requests to index.html
-      if (window.location.pathname !== "/") {
-        window.location.replace("/");
+      // Redirect requests to the appropriate URLs
+      if (
+        window.location.pathname !== "/kasa2" &&
+        window.location.pathname !== "/kasa2/about" &&
+        !window.location.pathname.startsWith("/kasa2/apartment/")
+      ) {
+        window.location.replace("/kasa2");
       }
     </script>
   </head>
