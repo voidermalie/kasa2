@@ -22,3 +22,17 @@ main {
 a {
   text-decoration: none;
 }
+
+.about-content {
+  padding: 40px 100px !important;
+}
+
+.about-content h1 {
+  display: none !important;
+}
+
+@media screen and (max-width: 792px) {
+  .about-content {
+    padding: 30px !important;
+  }
+}
