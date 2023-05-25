@@ -1,6 +1,5 @@
 import './About.css';
 import Banner from '../../components/Banner/Banner';
-import '../../components/Banner/Banner.css';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 const About = () => {
