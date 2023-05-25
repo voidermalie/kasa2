@@ -1,6 +1,6 @@
 import './About.css';
 import Banner from '../../components/Banner/Banner';
-import Dropdown from '../../components/Dropdown/Dropdown';
+import DropDown from '../../components/DropDown/DropDown';
 
 const About = () => {
   const page = 'about';
@@ -45,10 +45,10 @@ const About = () => {
     <section className="about-content">
       <Banner page={page} />
       <h1>À propos</h1>
-      <Dropdown dropdowns={dropdowns1} />
-      <Dropdown dropdowns={dropdowns2} />
-      <Dropdown dropdowns={dropdowns3} />
-      <Dropdown dropdowns={dropdowns4} />
+      <DropDown dropdowns={dropdowns1} />
+      <DropDown dropdowns={dropdowns2} />
+      <DropDown dropdowns={dropdowns3} />
+      <DropDown dropdowns={dropdowns4} />
     </section>
   );
 };
