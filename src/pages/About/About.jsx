@@ -42,7 +42,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about-content">
+    <section id="about-content">
       <Banner page={page} />
       <h1>À propos</h1>
       <DropDown dropdowns={dropdowns1} />

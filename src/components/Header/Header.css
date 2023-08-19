@@ -31,14 +31,14 @@ header {
 
 .logo {
   /*flex: 1 1 auto;*/
-  filter: drop-shadow(0 5px 3px lightgray);
+  /*filter: drop-shadow(0 5px 3px lightgray);*/
 }
 
 nav {
   display: flex;
   flex: 1 1 auto;
   justify-content: flex-end;
-  filter: drop-shadow(0 5px 3px lightgray);
+  /*filter: drop-shadow(0 5px 3px lightgray);*/
   /*filter: drop-shadow(0 6px 12px gray)*/
 
   /*text-shadow: gray 0 6px 12px;*/

@@ -2,6 +2,7 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 
 
+
 //logement en tant qu'objet
 
 const Card = ({ logement, to }) => {
